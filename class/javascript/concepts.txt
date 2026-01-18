@@ -1,0 +1,20 @@
+// What is Web Technology?
+// Web Technology refers to tools and techniques used to create websites and web applications.
+// It includes frontend, backend, and database technologies.
+
+// Real-time examples of Web Technology:
+// 1. Google Search
+// 2. Instagram
+// 3. Online shopping websites like Amazon
+// 4. Online banking systems
+
+// What is JavaScript?
+// JavaScript is a scripting language used to make web pages interactive.
+// It runs in the browser as well as on servers using Node.js.
+
+// JavaScript file extension
+// JavaScript files use the .js extension.
+
+// Why do we use Node.js?
+// Node.js allows JavaScript code  to run outside the browser.
+
