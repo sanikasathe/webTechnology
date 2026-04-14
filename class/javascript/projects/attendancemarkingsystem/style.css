@@ -1,0 +1,150 @@
+/* RESET */
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #374151, #4b5563); /* lighter grey section */
+  color: white;
+  min-height: 100vh;
+}
+
+/* 🖤 NAVBAR (darker grey) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111827;  /* 🔥 dark grey */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Hover */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #9ca3af;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* CONTAINER */
+.container {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* INPUTS */
+input, select {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTON */
+button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #6b7280;
+  color: white;
+}
+
+/* ACTIVE */
+.active {
+  background: white;
+  color: black;
+}
+
+/* Submit button */
+.submit {
+  width: 100%;
+  background: #28a745;  /* green color */
+  color: white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #218838; /* darker green on hover */
+}
+
+/* RESULT */
+#result {
+  margin-top: 10px;
+}
+/* RADIO BUTTONS CENTER & SPACING */
+.row {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 40px; 
+  margin-bottom: 20px; 
+}
+
+.row label {
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Heading color for attendance system */
+.container h2 {
+  color: #ffcc00; /* bright yellow to stand out */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px black; /* optional: makes it pop */
+}
+
+/* HOME & ABOUT HEADINGS */
+.hero h1, 
+.container h1, 
+.container h2 {
+  color: #ffcc00; /* bright yellow to stand out */
+  text-shadow: 1px 1px 2px black; /* makes text pop */
+  margin-bottom: 15px;
+}
+
+/* Paragraph text in hero or container */
+.hero p, 
+.container p {
+  color: #ffffff; /* white text for contrast */
+  font-size: 16px;
+  line-height: 1.5;
+}

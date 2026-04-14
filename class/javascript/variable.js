@@ -1,4 +1,4 @@
-// =========================================
+
 // Difference between var, let, and const
 
 
@@ -16,9 +16,7 @@ const c = 50;
 
 
 
-// =========================================
 // Data Types in JavaScript
-// =========================================
 
 // -------- Primitive Data Types --------
 // Primitive data types store single values
