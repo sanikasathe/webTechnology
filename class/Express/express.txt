@@ -1,0 +1,38 @@
+1.use -->express is used in backend
+2.defn--->its minimal and flexible web application framework for node js that simplifies 
+developement of web servers and API's.
+
+3.why express js even there is node js--->node js is complicated and thus express
+ js can be used
+
+ 4.features---
+ routing ,middle ware support,request and response handling ,rest api creation,
+ template rendering
+
+ 5.npm--->node package manager-->install required packages
+ 
+ const port = 3000--->for us=>wrtite in index.js
+                       in industry---->.env file
+                       /=routes
+
+6.routing--> refers to determining how an application responds to a client request 
+for specific url and http methods.(/)
+
+/home==>home page or /about-->about page
+
+
+
+//components of routing -->url path,http methods,handler functions
+
+steps-->1.check node version
+2.
+package.json-->configuration
+npm install package--->node_modules and package-lock.json
+
+//middleware funcn--->funcn that executes during lifecycle of requests before sending 
+the final response.they have access to request ,response and next.(client send req through middleware to server)-->handles http req
+
+**middleware flow**
+client req->middleware->route handler->response
+
+have access for 3 parameters ->request ,response and next
