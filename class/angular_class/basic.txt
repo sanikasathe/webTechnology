@@ -1,0 +1,42 @@
+angular--->typescript(above js version)based web application framework (by google)
+react---library(to solve issue of msg icon)
+angular---big framework
+
+SPA--SINGLE PAGE APPLICATION(page not reload while navigating)
+installation--
+1.check node version
+2.npmi-g @angular/cli--->command line interface
+3.new project--->ng new
+
+component--structure of ui block
+hoqw to create->
+ng g c home---->ng=>angular,g=>generate,c =>component
+
+
+//create angular application
+ng new my-first-app
+
+project run command-->ng serve or ng serve -0 or ng s
+pacakage.json is configuration file 
+pacakage..json--->configuration file with detiled information
+angular.json -->project configuration file
+style.css----->styling global css
+
+2 types of datatypes-->primitive and nonpremitive
+name:string="sanika;
+
+components ---ui block of structure
+when we create components,,it create 4 files
+html,css,specs.ts,ts
+specs.ts==>unit testing purpose
+html--ui
+css-style
+ts-
+
+2 types of data binding-->connects ui to code(1 way and 2 way)
+**1 way data binding---3 types
+interpolation {{value}}          
+property      [property]="value"
+event        (event)="handler()"
+
+**two-way      [(ngModel)]="value"--->1 type
