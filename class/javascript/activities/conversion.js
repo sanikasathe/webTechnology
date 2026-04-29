@@ -7,12 +7,6 @@ console.log("typeof num1: " +typeof(num1));
 
 console.log();
 
-console.log("Converting Math.PI to number");
-let num2 = Number(Math.PI)
-console.log(num2);
-console.log("typeof num2: " +typeof(num2));
-
-console.log();
 
 let str3 = "  ";
 console.log("typeof str3: " +typeof(str3));

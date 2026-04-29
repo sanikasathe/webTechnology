@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Activity</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<h3>Click image to remove</h3>
+
+<!-- Butterfly -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Monarch_Butterfly.jpg" width="200">
+
+<!-- Flower -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Rose_flower.jpg" width="200">
+
+<script>
+$("img").click(function() {
+    $(this).hide();
+});
+</script>
+
+</body>
+</html>

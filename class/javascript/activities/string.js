@@ -11,6 +11,20 @@ console.log(`hello my course name is ${str2}`);  // `--->backticks
 const gameCount=new String("JSCWS")
 console.log(gameCount);
 
+// String Addition / Concatenation
+
+const fname = "Sanika";
+const course = "JavaScript";
+
+// Using +
+console.log("Using + :", fname + " is learning " + course);
+
+// Using template literal
+console.log(`Using template: ${fname} is learning ${course}`);
+
+// Using concat
+console.log("Using concat:", fname.concat(" is learning ", course));
+
 // String methods
 
 console.log(gameCount.length);//  Used to find total number of characters in a string
