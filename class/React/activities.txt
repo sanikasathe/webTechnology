@@ -1,0 +1,186 @@
+Activity  1.- Difference between Angular and React ?
+
+Angular - A Complete frontend framework developed by google used to build  web applications
+        - Follows MVC architecture 
+        - uses typeScript 
+        - Slightly slower due to real DOM and heavy framework.
+
+React - A JavaScript library developed by Meta mainly used for building UI components.
+      - Follows component-based architecture.
+      - Uses JavaScript (ES6+) with JSX.
+      - Faster due to virtual DOM and optimized rendering.
+
+2.Which one is more popular Angular or React ?
+
+React is more popular than Angular because it is easier to learn, has a larger community, offers better performance with the virtual DOM, and is widely used in modern web development projects.
+
+3.Why React library is created ?
+React was created to build fast, interactive, and reusable user interfaces, especially for complex applications where UI changes frequently.
+
+4.- <></> - What is this called and why we use it ?
+
+It is called a Fragment (short syntax)
+
+  Why we use it?
+To group multiple elements without adding extra HTML tags (like <div>)
+
+5.What are the component and types of components, where we use componenets in react with 2 examples
+
+- A component in React is a reusable, independent building block of the UI. 
+Types of component in React 
+1. Functional component 
+ - Simple JavaScript functions that return JSX
+ - Support Hooks like useState, useEffect
+
+2. Class component 
+ - ES6 classes that extend React.Component
+ - Use render() method
+
+Where we use components 
+- We use components to build every part of a React application, such as:
+        Navigation bar
+        Buttons
+        Forms
+        Pages (Home, About, Dashboard)
+        Cards, lists, dashboards, etc.
+examples--->Navbar → top navigation menu
+Footer → bottom section of page
+Sidebar → side navigation panel
+LoginForm / SignupForm → user authentication
+
+
+6.
+Activity 6 - What is props , why we use props and types of props with 2 examples
+Ans - Props are used to pass data from a parent component to a child component in React. They make components reusable and dynamic.
+We use props to:
+    Pass data between components
+    Make components reusable
+    Make UI dynamic instead of static
+    Follow one-way data flow 
+Types of Props
+1. Simple Props- Passing single values like string, number, boolean
+2. Multiple Props (Object-like props) - Passing multiple values together (like name, age, etc.)
+3. Children Props - Passing components or JSX inside another component
+
+Example of props
+1. passing object as props - Product.jsx
+2. passing function as props - Button.jsx
+
+***********************************activities(from pdf)**********************************************************************************
+Activity no.1. Types of Components
+
+React has 2 main types:
+
+Functional Components (modern & recommended)
+Class Components (old)
+
+Components are reusable UI blocks
+
+Functional Component : 
+        function Hello() {
+        return <h1>Hello Student</h1>;
+        }
+        export default Hello;
+
+Class Component :
+        import React, { Component } from "react";
+
+        class Hello extends Component {
+        render() {
+            return <h1>Hello Student</h1>;
+        }
+        }
+        export default Hello;
+
+
+Activity no.2. Props Activity
+
+Props = data passed from parent → child
+Props are read-only (cannot change)
+
+function Student(props) {
+  return <h2>Name: {props.name}</h2>;
+}
+
+function App() {
+  return <Student name="Priya" />;
+}
+export default App;
+
+
+Activity no.3 State Concept
+
+State = data inside component (can change)
+Example 1: Counter
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <h2>{count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </>
+  );
+}
+export default Counter;
+
+
+Example 2: Input Field
+import { useState } from "react";
+
+function InputExample() {
+  const [name, setName] = useState("");
+
+  return (
+    <>
+      <input onChange={(e) => setName(e.target.value)} />
+      <h2>{name}</h2>
+    </>
+  );
+}
+export default InputExample;
+
+
+Activity no.4 Hooks Concept
+
+Hooks = functions that allow functional components to use state & features
+useState
+import { useState } from "react";
+
+function Example() {
+  const [num, setNum] = useState(0);
+
+  return <button onClick={() => setNum(num + 1)}>{num}</button>;
+}
+
+useEffect
+import { useEffect } from "react";
+
+function Example() {
+
+  useEffect(() => {
+    console.log("Component Loaded");
+  }, []);
+
+  return <h2>Check Console</h2>;
+}
+
+useRef
+import { useRef } from "react";
+
+function Example() {
+  const inputRef = useRef();
+
+  return (
+    <>
+      <input ref={inputRef} />
+      <button onClick={() => inputRef.current.focus()}>
+        Focus
+      </button>
+    </>
+  );
+}
+
+
